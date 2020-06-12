@@ -11,10 +11,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h> //permet de faire des opérations avec des exponentiels
 #include <p18f2520.h> //Contient les registres du microcontroleur
 
-#include "Initialisation.h"
-#include "bouton.h"
+//#include "Initialisation.h"
+//#include "Mesure_batterie.h"
 
 
 #endif	/* LIB_H */

@@ -8,12 +8,19 @@
 
 #include "lib.h"
 
+
 /*
  * 
  */
-int main(int argc, char** argv)
+void main(void)
 {
     Initialisation();
-    return 0;
+    while (1)
+    {
+        Mesure_batterie();
+    }
+    Mesure_batterie();
+//    printf("wtf");
+    
 }
 
