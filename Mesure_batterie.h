@@ -9,7 +9,7 @@
 #ifndef MESURE_BATTERIE_H
 #define	MESURE_BATTERIE_H
 
-void Mesure_batterie(void);
+void Mesure_batterie(Glob_var *glob_var);
 
 #endif	/* MESURE_BATTERIE_H */
 

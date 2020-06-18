@@ -14,9 +14,15 @@
 #include <math.h> //permet de faire des opérations avec des exponentiels
 #include <p18f2520.h> //Contient les registres du microcontroleur
 
-//#include "Initialisation.h"
+//#include "Initialisation.h" //fonctionne pas pour une raison inconnue
 //#include "Mesure_batterie.h"
+//#include "I2C_Master.h"
 
+typedef struct{
+    volatile char Buff_lecture[100];
+    volatile unsigned char i;
+    volatile int v_batt;
+}Glob_var;
 
 #endif	/* LIB_H */
 

@@ -7,20 +7,31 @@
 
 
 #include "lib.h"
-
+#include "Initialisation.h"
+#include "Mesure_batterie.h"
+#include "I2C_Master.h"
+//#include "uart.h"
 
 /*
  * 
  */
+
+
 void main(void)
 {
+    Glob_var *glob_var;
+    glob_var->i = 0;
+
+
     Initialisation();
     while (1)
     {
-        Mesure_batterie();
+
+        Lire_I2C_telecommande(glob_var);
+        Mesure_batterie(glob_var);
+        //traitement de la donnée envoyée par la télécommande
+
     }
-    Mesure_batterie();
-//    printf("wtf");
     
 }
 
